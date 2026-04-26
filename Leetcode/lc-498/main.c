@@ -80,3 +80,21 @@ int main() {
 
     return 0;
 }
+
+// Output Valgrind:
+/* ==291860== Memcheck, a memory error detector
+==291860== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==291860== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==291860== Command: ./main
+==291860== 
+Diagonal Order:
+1 2 4 7 5 3 6 8 9 
+==291860== 
+==291860== HEAP SUMMARY:
+==291860==     in use at exit: 0 bytes in 0 blocks
+==291860==   total heap usage: 6 allocs, 6 frees, 1,120 bytes allocated
+==291860== 
+==291860== All heap blocks were freed -- no leaks are possible
+==291860== 
+==291860== For lists of detected and suppressed errors, rerun with: -s
+==291860== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0) */
