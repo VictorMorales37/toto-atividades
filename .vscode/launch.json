@@ -10,22 +10,11 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
-            "linux": {
+            "linux": {  
                 "MIMode": "gdb",
                 "miDebuggerPath": "gdb",
-                "program": "${workspaceFolder}/output/main"
-            },
-            "osx": {
-                "MIMode": "lldb",
-                "miDebuggerPath": "lldb-mi",
-                "program": "${workspaceFolder}/output/main"
-            },
-            "windows": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "gdb.exe",
-                "program": "${workspaceFolder}/output/main.exe"
-            },
-            "preLaunchTask": "build"
+                "program": "${workspaceFolder}/Leetcode/lc-20/main"
+            }
         }
     ]
 }
